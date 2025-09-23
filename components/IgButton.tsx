@@ -14,9 +14,9 @@ export default function IgButtom() {
           <Image
             src="/instagram-logo.png"
             alt="Instagram"
-            width={20}
-            height={20}
-            className="invert-0"
+            width={40}
+            height={40}
+            className="invert"
           />
           Follow on Instagram
         </span>
