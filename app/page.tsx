@@ -10,7 +10,10 @@ export default function Home() {
             <div className="relative isolate rounded-3xl">
               <div className="pointer-events-none absolute inset-0 -z-10 rounded-3xl bg-[radial-gradient(80%_50%_at_50%_0%,rgba(255,126,0,0.10),transparent_60%),radial-gradient(70%_50%_at_50%_100%,rgba(170,0,0,0.10),transparent_60%)]" />
               <div className="flex flex-col items-center text-center gap-7 md:gap-9 px-6 md:px-10 py-12 md:py-16">
-                <h1 className="text-4xl md:text-6xl font-semibold tracking-tight">
+                <h1
+                  className="text-4xl md:text-6xl font-semibold tracking-tight"
+                  style={{ color: "#FF7E00" }}
+                >
                   selam
                 </h1>
                 <p className="text-base md:text-xl text-foreground/80 leading-relaxed max-w-2xl">
