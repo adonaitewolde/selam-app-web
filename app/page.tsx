@@ -29,7 +29,9 @@ export default function Home() {
                 />
 
                 <p className="text-sm md:text-base text-foreground/70">
-                  Coming 2026 to the App Store and Google Play.
+                  Coming 2026 to the App Store
+                  <br />
+                  and Google Play.
                 </p>
 
                 <div className="pt-1">
