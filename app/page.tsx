@@ -4,11 +4,11 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <main className="min-h-screen flex flex-col">
+      <main className="min-h-screen flex flex-col bg-[radial-gradient(80%_50%_at_50%_0%,rgba(255,126,0,0.10),transparent_60%),radial-gradient(70%_50%_at_50%_100%,rgba(170,0,0,0.10),transparent_60%)]">
         <section className="flex-1">
           <div className="mx-auto max-w-5xl px-6 md:px-8 pt-20 md:pt-28 pb-14 md:pb-20">
             <div className="relative isolate rounded-3xl">
-              <div className="pointer-events-none absolute inset-0 -z-10 rounded-3xl bg-[radial-gradient(80%_50%_at_50%_0%,rgba(255,126,0,0.10),transparent_60%),radial-gradient(70%_50%_at_50%_100%,rgba(170,0,0,0.10),transparent_60%)]" />
+              <div className="pointer-events-none absolute inset-0 -z-10 rounded-3xl " />
               <div className="flex flex-col items-center text-center gap-7 md:gap-9 px-6 md:px-10 py-12 md:py-16">
                 <h1
                   className="text-4xl md:text-6xl font-semibold tracking-tight"
