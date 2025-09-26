@@ -14,7 +14,7 @@ import Link from "next/link";
 // ];
 
 export default function Example() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
 
   return (
     <div className="bg-black">
