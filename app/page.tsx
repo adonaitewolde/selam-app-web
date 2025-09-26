@@ -1,53 +1,103 @@
-import IgButtom from "@/components/IgButton";
+"use client";
+
+import { useState } from "react";
+import { Dialog, DialogPanel } from "@headlessui/react";
+import { XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
+import Link from "next/link";
 
-export default function Home() {
+// const navigation = [
+//   { name: "Product", href: "#" },
+//   { name: "Features", href: "#" },
+//   { name: "Marketplace", href: "#" },
+//   { name: "Company", href: "#" },
+// ];
+
+export default function Example() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
-    <>
-      <main className="min-h-screen flex flex-col bg-[radial-gradient(80%_50%_at_50%_0%,rgba(255,126,0,0.10),transparent_60%),radial-gradient(70%_50%_at_50%_100%,rgba(170,0,0,0.10),transparent_60%)]">
-        <section className="flex-1">
-          <div className="mx-auto max-w-5xl px-6 md:px-8 pt-20 md:pt-28 pb-14 md:pb-20">
-            <div className="relative isolate rounded-3xl">
-              <div className="pointer-events-none absolute inset-0 -z-10 rounded-3xl " />
-              <div className="flex flex-col items-center text-center gap-7 md:gap-9 px-6 md:px-10 py-12 md:py-16">
-                <h1
-                  className="text-4xl md:text-6xl font-semibold tracking-tight"
-                  style={{ color: "#FF7E00" }}
+    <div className="bg-black">
+      <header className="absolute inset-x-0 top-0 z-50">
+        <nav
+          aria-label="Global"
+          className="flex items-center justify-between p-6 lg:px-8"
+        >
+          <div className="flex lg:flex-1">
+            <a href="#" className="-m-1.5 p-1.5">
+              <span className="sr-only">Your Company</span>
+              <Image
+                alt="selam"
+                src="/clear-black-logo.png"
+                width={40}
+                height={40}
+                className="h-8 w-auto dark:invert"
+              />
+            </a>
+          </div>
+        </nav>
+      </header>
+
+      <div className="relative isolate px-6 pt-14 lg:px-8 overflow-hidden">
+        <div
+          aria-hidden="true"
+          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        >
+          <div
+            style={{
+              clipPath:
+                "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+            }}
+            className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff3b30] via-[#ff9500] to-[#ffcc00] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"
+          />
+        </div>
+        <div className="mx-auto max-w-2xl py-24 sm:py-32 lg:py-40">
+          <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
+          <div className="text-center ">
+            <div className="flex flex-row justify-center my-15 gap-7">
+              <Image src="/logo.png" alt="selam" width={130} height={100} />
+              <h1 className="text-5xl font-medium tracking-tight text-balance text-white sm:text-7xl font-poppins pt-8">
+                selam
+              </h1>
+            </div>
+            <h1 className="text-4xl font-semibold tracking-tight text-balance text-white sm:text-7xl">
+              Learn Tigrinya the easy way!
+            </h1>
+            <p className="mt-8 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
+              Comming 2026 to the App Store, Google Play and the Web. <br />
+              <span className="">Don&apos;t miss the release!</span>
+            </p>
+            <div className="mt-10 flex items-center justify-center gap-x-10s">
+              <div className="flex items-center relative rounded-full px-3 py-1 text-sm/6 text-gray-400 ring-1 ring-[#ff9500]/20 hover:ring-[#ff9500]/30  ">
+                <Link
+                  href="https://www.instagram.com/selam.app"
+                  className="flex items-center"
                 >
-                  selam
-                </h1>
-                <p className="text-base md:text-xl text-foreground/80 leading-relaxed max-w-2xl">
-                  Learn Tigrinya anywhere, anytime.
-                </p>
-
-                <Image
-                  src="/selam-appicon.png"
-                  alt="Selam app icon"
-                  width={128}
-                  height={128}
-                  className="rounded-2xl shadow-sm"
-                />
-
-                <p className="text-sm md:text-base text-foreground/70">
-                  Coming 2026 to the App Store
-                  <br />
-                  and Google Play.
-                </p>
-
-                <div className="pt-1">
-                  <IgButtom />
-                </div>
+                  <Image
+                    src="/instagram-logo.png"
+                    alt="Instagram"
+                    width={50}
+                    height={35}
+                    className="dark:invert hover:scale-50"
+                  />
+                </Link>
+                <Link
+                  href="https://x.com/selam_app"
+                  className="flex items-center"
+                >
+                  <Image
+                    src="/X.png"
+                    alt="X"
+                    width={35}
+                    height={35}
+                    className="dark:invert"
+                  />
+                </Link>
               </div>
             </div>
           </div>
-        </section>
-
-        <footer className="border-t border-black/5 dark:border-white/10">
-          <div className="mx-auto max-w-5xl px-6 md:px-8 py-6 md:py-8 text-center text-sm text-foreground/60">
-            © {new Date().getFullYear()} selam — All rights reserved.
-          </div>
-        </footer>
-      </main>
-    </>
+        </div>
+      </div>
+    </div>
   );
 }
