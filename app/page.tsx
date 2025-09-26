@@ -31,7 +31,7 @@ export default function Example() {
                 src="/clear-black-logo.png"
                 width={40}
                 height={40}
-                className="h-8 w-auto dark:invert"
+                className="h-8 w-auto invert"
               />
             </a>
           </div>
@@ -51,11 +51,17 @@ export default function Example() {
             className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff3b30] via-[#ff9500] to-[#ffcc00] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"
           />
         </div>
-        <div className="mx-auto max-w-2xl py-24 sm:py-32 lg:py-40">
+        <div className="mx-auto max-w-2xl py-12 sm:py-20 lg:py-70">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
           <div className="text-center ">
-            <div className="flex flex-row justify-center my-15 gap-7">
-              <Image src="/logo.png" alt="selam" width={130} height={100} />
+            <div className="flex flex-row justify-center my-15 gap-7 sm:gap-2">
+              <Image
+                src="/logo.png"
+                alt="selam"
+                width={130}
+                height={100}
+                className="w-[100px] h-auto sm:w-[130px] sm:h-[100px]"
+              />
               <h1 className="text-5xl font-medium tracking-tight text-balance text-white sm:text-7xl font-poppins pt-8">
                 selam
               </h1>
@@ -65,7 +71,9 @@ export default function Example() {
             </h1>
             <p className="mt-8 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
               Comming 2026 to the App Store, Google Play and the Web. <br />
-              <span className="">Don&apos;t miss the release!</span>
+              <span className="text-[#fff9f1] font-semibold">
+                Don&apos;t miss the release!
+              </span>
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-10s">
               <div className="flex items-center relative rounded-full px-3 py-1 text-sm/6 text-gray-400 ring-1 ring-[#ff9500]/20 hover:ring-[#ff9500]/30  ">
@@ -78,7 +86,7 @@ export default function Example() {
                     alt="Instagram"
                     width={50}
                     height={35}
-                    className="dark:invert hover:scale-50"
+                    className="invert hover:scale-113 transition duration-300 ease-in-out"
                   />
                 </Link>
                 <Link
@@ -90,7 +98,7 @@ export default function Example() {
                     alt="X"
                     width={35}
                     height={35}
-                    className="dark:invert"
+                    className="invert hover:scale-113 transition duration-300 ease-in-out"
                   />
                 </Link>
               </div>
