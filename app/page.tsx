@@ -51,16 +51,16 @@ export default function Example() {
             className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff3b30] via-[#ff9500] to-[#ffcc00] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"
           />
         </div>
-        <div className="mx-auto max-w-2xl py-12 sm:py-20 lg:py-70">
+        <div className="mx-auto max-w-2xl py-12 sm:py-20 lg:py-32">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
           <div className="text-center ">
-            <div className="flex flex-row justify-center my-15 gap-7 sm:gap-2">
+            <div className="flex flex-row justify-center my-15 gap-4 sm:gap-">
               <Image
                 src="/logo.png"
                 alt="selam"
                 width={130}
                 height={100}
-                className="w-[100px] h-auto sm:w-[130px] sm:h-[100px]"
+                className="w-[100px] h-auto sm:w-[130px] sm:h-auto"
               />
               <h1 className="text-5xl font-medium tracking-tight text-balance text-white sm:text-7xl font-poppins pt-8">
                 selam
