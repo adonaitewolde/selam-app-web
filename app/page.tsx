@@ -14,8 +14,6 @@ import Link from "next/link";
 // ];
 
 export default function Example() {
-
-
   return (
     <div className="bg-black">
       <header className="absolute inset-x-0 top-0 z-50">
@@ -70,7 +68,7 @@ export default function Example() {
               Learn Tigrinya the easy way!
             </h1>
             <p className="mt-8 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
-              Comming 2026 to the App Store, Google Play and the Web. <br />
+              Coming 2026 to the App Store, Google Play and the Web. <br />
               <span className="text-[#fff9f1] font-semibold">
                 Don&apos;t miss the release!
               </span>
