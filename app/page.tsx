@@ -65,7 +65,7 @@ export default function Example() {
               </h1>
             </div>
             <h1 className="text-4xl font-semibold tracking-tight text-balance text-white sm:text-7xl">
-              Learn Tigrinya the easy way!
+              Learn Tigrinya the new way!
             </h1>
             <p className="mt-8 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
               Coming 2026 to the App Store, Google Play and the Web. <br />
