@@ -39,10 +39,6 @@ export default function ContactForm() {
             name="email"
             required
             placeholder="name@example.com"
-            autoComplete="email"
-            inputMode="email"
-            pattern="^[\\w.%+-]+@[\\w.-]+\\.[A-Za-z]{2,}$"
-            title="Please enter a valid email address (e.g. name@example.com)."
             onInvalid={(event) =>
               event.currentTarget.setCustomValidity(
                 "Please enter a valid email address."
