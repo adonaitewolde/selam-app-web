@@ -31,7 +31,7 @@ export default function ContactForm() {
             htmlFor="email"
             className="block text-xs font-semibold uppercase tracking-[0.2em] text-white/70"
           >
-            Your email
+            be the first to try selam{" "}
           </label>
           <input
             id="email"
@@ -40,6 +40,15 @@ export default function ContactForm() {
             required
             placeholder="name@example.com"
             autoComplete="email"
+            inputMode="email"
+            pattern="^[\\w.%+-]+@[\\w.-]+\\.[A-Za-z]{2,}$"
+            title="Please enter a valid email address (e.g. name@example.com)."
+            onInvalid={(event) =>
+              event.currentTarget.setCustomValidity(
+                "Please enter a valid email address."
+              )
+            }
+            onInput={(event) => event.currentTarget.setCustomValidity("")}
             className="mt-2 w-full rounded-full border border-white/10 bg-black/40 px-5 py-3 text-base text-white placeholder:text-white/40 outline-none transition focus:border-transparent focus:ring-2 focus:ring-[#ff9500]/80 sm:py-3.5"
           />
           <ValidationError

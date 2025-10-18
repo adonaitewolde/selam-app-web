@@ -17,7 +17,7 @@ export default function Example() {
           aria-label="Global"
           className="flex items-center justify-between p-6 lg:px-8"
         >
-          <div className="flex justify-between lg:flex-1">
+          <div className="flex justify-between flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <Image
                 alt="selam"
@@ -47,8 +47,8 @@ export default function Example() {
                 <Image
                   src="/X.png"
                   alt="X"
-                  width={35}
-                  height={35}
+                  width={30}
+                  height={33}
                   className="invert hover:scale-113 transition duration-300 ease-in-out"
                 />
               </Link>
@@ -85,14 +85,11 @@ export default function Example() {
                 selam
               </h1>
             </div>
-            <h1 className="text-4xl font-semibold tracking-tight text-balance text-white sm:text-7xl">
+            <h1 className="text-4xl font-semibold tracking-tight text-balance text-white sm:text-6xl">
               Learn Tigrinya the new way!
             </h1>
             <p className="mt-8 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
               Coming 2026 to the App Store, Google Play and the Web. <br />
-              <span className="text-[#fff9f1] font-semibold">
-                Be the first to try selam!
-              </span>
             </p>
             <ContactForm />
           </div>
