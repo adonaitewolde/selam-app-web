@@ -1,10 +1,6 @@
-"use client";
-
-import { useState } from "react";
-import { Dialog, DialogPanel } from "@headlessui/react";
-import { XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
+import ContactForm from "@/components/ContactForm";
 
 // const navigation = [
 //   { name: "Product", href: "#" },
@@ -21,9 +17,8 @@ export default function Example() {
           aria-label="Global"
           className="flex items-center justify-between p-6 lg:px-8"
         >
-          <div className="flex lg:flex-1">
+          <div className="flex justify-between lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
               <Image
                 alt="selam"
                 src="/clear-black-logo.png"
@@ -32,11 +27,37 @@ export default function Example() {
                 className="h-8 w-auto invert"
               />
             </a>
+            <div className=" flex items-center justify-center gap-x-10s">
+              <Link
+                href="https://www.instagram.com/selam.app"
+                className="flex items-center"
+              >
+                <Image
+                  src="/instagram-logo.png"
+                  alt="Instagram"
+                  width={50}
+                  height={35}
+                  className="invert hover:scale-113 transition duration-300 ease-in-out"
+                />
+              </Link>
+              <Link
+                href="https://x.com/selam_app"
+                className="flex items-center"
+              >
+                <Image
+                  src="/X.png"
+                  alt="X"
+                  width={35}
+                  height={35}
+                  className="invert hover:scale-113 transition duration-300 ease-in-out"
+                />
+              </Link>
+            </div>
           </div>
         </nav>
       </header>
 
-      <div className="relative isolate px-6 pt-14 lg:px-8 overflow-hidden">
+      <div className="relative isolate px-6 lg:px-8 overflow-hidden">
         <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -49,7 +70,7 @@ export default function Example() {
             className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff3b30] via-[#ff9500] to-[#ffcc00] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"
           />
         </div>
-        <div className="mx-auto max-w-2xl py-12 sm:py-20 lg:py-32">
+        <div className="mx-auto max-w-2xl py-12 sm:py-20 ">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center"></div>
           <div className="text-center ">
             <div className="flex flex-row justify-center my-15 gap-4 sm:gap-">
@@ -70,37 +91,10 @@ export default function Example() {
             <p className="mt-8 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
               Coming 2026 to the App Store, Google Play and the Web. <br />
               <span className="text-[#fff9f1] font-semibold">
-                Don&apos;t miss the release!
+                Be the first to try selam!
               </span>
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-10s">
-              <div className="flex items-center relative rounded-full px-3 py-1 text-sm/6 text-gray-400 ring-1 ring-[#ff9500]/20 hover:ring-[#ff9500]/30  ">
-                <Link
-                  href="https://www.instagram.com/selam.app"
-                  className="flex items-center"
-                >
-                  <Image
-                    src="/instagram-logo.png"
-                    alt="Instagram"
-                    width={50}
-                    height={35}
-                    className="invert hover:scale-113 transition duration-300 ease-in-out"
-                  />
-                </Link>
-                <Link
-                  href="https://x.com/selam_app"
-                  className="flex items-center"
-                >
-                  <Image
-                    src="/X.png"
-                    alt="X"
-                    width={35}
-                    height={35}
-                    className="invert hover:scale-113 transition duration-300 ease-in-out"
-                  />
-                </Link>
-              </div>
-            </div>
+            <ContactForm />
           </div>
         </div>
       </div>
