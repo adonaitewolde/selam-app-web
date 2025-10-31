@@ -1,6 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 import ContactForm from "@/components/ContactForm";
+
+export const metadata = {
+  title: "Learn Tigrinya the new way!",
+  description:
+    "Learn Tigrinya (Tigrigna) the modern way with kemey. Join the waitlist to get updates for iOS, Android, and Web.",
+  keywords: [
+    "Learn Tigrinya",
+    "Tigrinya app",
+    "Kemey language learning",
+    "Kemey app",
+    "Tigrigna",
+    "Eritrean language",
+    "Ethiopian language",
+  ],
+};
 
 // const navigation = [
 //   { name: "Product", href: "#" },
@@ -12,43 +28,62 @@ import ContactForm from "@/components/ContactForm";
 export default function Example() {
   return (
     <div className="bg-black">
+      <Script
+        id="ld-json-organization"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "kemey",
+            url: "https://kemey.app",
+            sameAs: ["https://www.instagram.com/kemey.app"],
+            logo: "https://kemey.app/favicon.ico",
+          }),
+        }}
+      />
+      <Script
+        id="ld-json-website"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "kemey – Learn Tigrinya",
+            url: "https://kemey.app",
+            inLanguage: "en",
+          }),
+        }}
+      />
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
           aria-label="Global"
           className="flex items-center justify-between p-6 lg:px-8"
         >
           <div className="flex justify-between flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <Link
+              href="/"
+              className="-m-1.5 p-1.5"
+              aria-label="Go to kemey home"
+            >
               <Image
-                alt="selam"
+                alt="Kemey logo"
                 src="/clear-black-logo.png"
                 width={40}
                 height={40}
                 className="h-8 w-auto invert"
               />
-            </a>
+            </Link>
             <div className="flex items-center justify-center gap-x-4">
               <Link
-                href="https://www.instagram.com/selam.app"
+                href="https://www.instagram.com/kemey.app"
                 className="flex items-center"
               >
                 <Image
                   src="/instagram-logo.png"
-                  alt="Instagram"
+                  alt="Kemey Instagram profile"
                   width={50}
                   height={35}
-                  className="invert hover:scale-110 transition duration-300 ease-in-out"
-                />
-              </Link>
-              <Link
-                href="https://x.com/selam_app"
-                className="flex items-center"
-              >
-                <Image
-                  src="/X.png"
-                  alt="X"
-                  width={30}
-                  height={33}
                   className="invert hover:scale-110 transition duration-300 ease-in-out"
                 />
               </Link>
@@ -57,7 +92,7 @@ export default function Example() {
         </nav>
       </header>
 
-      <div className="relative isolate px-6 lg:px-8 overflow-hidden">
+      <main className="relative isolate px-6 lg:px-8 overflow-hidden">
         <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -76,14 +111,18 @@ export default function Example() {
             <div className="flex flex-row justify-center my-12 gap-4 sm:gap-6">
               <Image
                 src="/logo.png"
-                alt="selam"
+                alt="Kemey wordmark"
                 width={130}
                 height={100}
                 className="w-[100px] h-auto sm:w-[130px] sm:h-auto"
+                priority
               />
-              <h1 className="text-5xl font-medium tracking-tight text-balance text-white sm:text-7xl font-poppins pt-8">
-                selam
-              </h1>
+              <p
+                className="text-5xl font-medium tracking-tight text-balance text-white sm:text-7xl font-poppins pt-8"
+                aria-label="Kemey"
+              >
+                kemey
+              </p>
             </div>
             <h1 className="text-4xl font-semibold tracking-tight text-balance text-white sm:text-6xl">
               Learn Tigrinya the new way!
@@ -94,7 +133,7 @@ export default function Example() {
             <ContactForm />
           </div>
         </div>
-      </div>
+      </main>
     </div>
   );
 }

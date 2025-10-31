@@ -1,10 +1,10 @@
-# Selam App - Learn Tigrinya the New Way! 🇪🇷🇪🇹
+# Kemey App - Learn Tigrinya the New Way! 🇪🇷🇪🇹
 
-A modern, elegant landing page for **Selam**, the next-generation Tigrinya language learning application. Built with Next.js 15, React 19, and Tailwind CSS.
+A modern, elegant landing page for **Kemey**, the next-generation Tigrinya language learning application. Built with Next.js 15, React 19, and Tailwind CSS.
 
-## 🌟 About Selam
+## 🌟 About Kemey
 
-Selam is an innovative language learning platform designed to make learning Tigrinya accessible, engaging, and fun. Coming 2026 to the App Store, Google Play, and the Web.
+Kemey is an innovative language learning platform designed to make learning Tigrinya accessible, engaging, and fun. Coming 2026 to the App Store, Google Play, and the Web.
 
 ## ✨ Features
 
@@ -95,8 +95,7 @@ selam-app-web/
 
 ## 🌐 Social Media
 
-- **Instagram:** [@selam.app](https://www.instagram.com/selam.app)
-- **X (Twitter):** [@selam_app](https://x.com/selam_app)
+- **Instagram:** [@kemey.app](https://www.instagram.com/kemey.app)
 
 ## 🚀 Deployment
 
