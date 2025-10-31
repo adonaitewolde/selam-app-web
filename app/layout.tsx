@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -30,6 +30,13 @@ export const metadata: Metadata = {
   },
   description:
     "Learn Tigrinya the new way with kemey. A modern Tigrinya (Tigrigna) language learning app for beginners and heritage speakers.",
+  authors: [{ name: "kemey Team" }],
+  creator: "kemey",
+  publisher: "kemey",
+  formatDetection: {
+    telephone: false,
+  },
+  category: "Education",
   keywords: [
     "Learn Tigrinya",
     "Tigrinya app",
@@ -76,7 +83,7 @@ export const metadata: Metadata = {
       "Learn Tigrinya the new way with kemey. A modern Tigrinya (Tigrigna) language learning app for beginners and heritage speakers.",
     images: [
       {
-        url: "/opengraph-image",
+        url: "https://kemey.app/api/og",
         width: 1200,
         height: 630,
         alt: "kemey – Learn Tigrinya",
@@ -91,7 +98,7 @@ export const metadata: Metadata = {
       "Learn Tigrinya the new way with kemey. A modern Tigrinya (Tigrigna) language learning app for beginners and heritage speakers.",
     images: [
       {
-        url: "/twitter-image",
+        url: "https://kemey.app/api/twitter",
         width: 1200,
         height: 630,
         alt: "kemey – Learn Tigrinya",
@@ -100,15 +107,16 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: "/favicon.ico",
-    apple: "/favicon.ico",
+    apple: "/apple-icon",
   },
   manifest: "/manifest.webmanifest",
+};
+
+export const viewport: Viewport = {
   themeColor: "#000000",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    viewportFit: "cover",
-  },
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({

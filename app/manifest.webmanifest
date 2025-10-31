@@ -6,11 +6,24 @@
   "background_color": "#000000",
   "theme_color": "#000000",
   "lang": "en",
+  "description": "Learn Tigrinya the new way with kemey. A modern Tigrinya language learning app.",
   "icons": [
     {
       "src": "/favicon.ico",
       "sizes": "48x48",
       "type": "image/x-icon"
+    },
+    {
+      "src": "/icon?size=192",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon?size=512",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }

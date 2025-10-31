@@ -3,21 +3,6 @@ import Link from "next/link";
 import Script from "next/script";
 import ContactForm from "@/components/ContactForm";
 
-export const metadata = {
-  title: "Learn Tigrinya the new way!",
-  description:
-    "Learn Tigrinya (Tigrigna) the modern way with kemey. Join the waitlist to get updates for iOS, Android, and Web.",
-  keywords: [
-    "Learn Tigrinya",
-    "Tigrinya app",
-    "Kemey language learning",
-    "Kemey app",
-    "Tigrigna",
-    "Eritrean language",
-    "Ethiopian language",
-  ],
-};
-
 // const navigation = [
 //   { name: "Product", href: "#" },
 //   { name: "Features", href: "#" },
@@ -52,6 +37,36 @@ export default function Example() {
             name: "kemey – Learn Tigrinya",
             url: "https://kemey.app",
             inLanguage: "en",
+            potentialAction: {
+              "@type": "SearchAction",
+              target: {
+                "@type": "EntryPoint",
+                urlTemplate: "https://kemey.app/?q={search_term_string}",
+              },
+              "query-input": "required name=search_term_string",
+            },
+          }),
+        }}
+      />
+      <Script
+        id="ld-json-webapp"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            name: "kemey",
+            applicationCategory: "EducationalApplication",
+            offers: {
+              "@type": "Offer",
+              price: "0",
+              priceCurrency: "USD",
+            },
+            operatingSystem: "iOS, Android, Web",
+            description:
+              "Learn Tigrinya the new way with kemey. A modern Tigrinya (Tigrigna) language learning app for beginners and heritage speakers.",
+            inLanguage: "en",
+            availableOnDevice: ["Mobile", "Desktop", "Tablet"],
           }),
         }}
       />
