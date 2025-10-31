@@ -37,7 +37,7 @@ export default function Example() {
                   alt="Instagram"
                   width={50}
                   height={35}
-                  className="invert hover:scale-113 transition duration-300 ease-in-out"
+                  className="invert hover:scale-110 transition duration-300 ease-in-out"
                 />
               </Link>
               <Link
@@ -49,7 +49,7 @@ export default function Example() {
                   alt="X"
                   width={30}
                   height={33}
-                  className="invert hover:scale-113 transition duration-300 ease-in-out"
+                  className="invert hover:scale-110 transition duration-300 ease-in-out"
                 />
               </Link>
             </div>

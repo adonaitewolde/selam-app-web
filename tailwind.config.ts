@@ -2,11 +2,17 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./app/**/*.{js,jsx,ts,tsx,mdx}",
-    "./components/**/*.{js,jsx,ts,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["var(--font-geist-sans)"],
+        mono: ["var(--font-geist-mono)"],
+        poppins: ["var(--font-poppins)"],
+      },
+    },
   },
   plugins: [],
 };
