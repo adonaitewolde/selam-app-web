@@ -1,36 +1,130 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Selam App - Learn Tigrinya the New Way! 🇪🇷🇪🇹
 
-## Getting Started
+A modern, elegant landing page for **Selam**, the next-generation Tigrinya language learning application. Built with Next.js 15, React 19, and Tailwind CSS.
 
-First, run the development server:
+## 🌟 About Selam
+
+Selam is an innovative language learning platform designed to make learning Tigrinya accessible, engaging, and fun. Coming 2026 to the App Store, Google Play, and the Web.
+
+## ✨ Features
+
+- **Modern Landing Page** - Clean, responsive design with smooth animations and gradients
+- **Waitlist Integration** - Email collection powered by Formspree
+- **Social Media Links** - Connect with us on Instagram and X (Twitter)
+- **SEO Optimized** - Built with best practices for search engine visibility
+- **Performance Optimized** - Vercel Analytics and Speed Insights integration
+- **Dark Theme** - Beautiful black background with vibrant accent colors
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18.x or higher
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/selam-app-web.git
+cd selam-app-web
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework:** [Next.js 15](https://nextjs.org/) (App Router)
+- **React:** 19.1.0
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Form Handling:** [@formspree/react](https://formspree.io/)
+- **UI Components:** Headless UI
+- **Icons:** Heroicons
+- **Analytics:** Vercel Analytics & Speed Insights
+- **TypeScript:** Full type safety
+- **Deployment:** Optimized for Vercel
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+selam-app-web/
+├── app/
+│   ├── favicon.ico
+│   ├── globals.css         # Global styles and Tailwind directives
+│   ├── layout.tsx          # Root layout with metadata
+│   └── page.tsx            # Main landing page
+├── components/
+│   └── ContactForm.tsx     # Waitlist signup form
+├── public/
+│   ├── clear-black-logo.png
+│   ├── instagram-logo.png
+│   ├── logo.png
+│   └── X.png
+├── next.config.ts
+├── tailwind.config.ts
+└── tsconfig.json
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Design Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Gradient backgrounds with blur effects
+- Smooth hover animations on social media icons
+- Responsive design for mobile, tablet, and desktop
+- Glassmorphism effects on form components
+- Custom color palette: orange (#ff9500), red (#ff3b30), and yellow (#ffcc00)
 
-## Deploy on Vercel
+## 📝 Available Scripts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🌐 Social Media
+
+- **Instagram:** [@selam.app](https://www.instagram.com/selam.app)
+- **X (Twitter):** [@selam_app](https://x.com/selam_app)
+
+## 🚀 Deployment
+
+This app is optimized for deployment on [Vercel](https://vercel.com/):
+
+1. Push your code to GitHub
+2. Import your repository to Vercel
+3. Vercel will automatically detect Next.js and configure the build settings
+4. Deploy! 🎉
+
+Alternatively, check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for other deployment options.
+
+## 📄 Environment Variables
+
+If you need to configure Formspree or other services, create a `.env.local` file:
+
+```bash
+# Add environment variables here if needed
+```
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+
+## 📜 License
+
+This project is private and proprietary.
+
+---
+
+Built with ❤️ for the Tigrinya-speaking community
