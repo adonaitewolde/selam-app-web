@@ -14,7 +14,7 @@ export default function ContactForm() {
           Thanks, we&apos;ll reach out soon!
         </p>
         <p className="mt-2">
-          You&apos;re on the waitlist and will hear from us as soon as selam is
+          You&apos;re on the waitlist and will hear from us as soon as kemey is
           available.
         </p>
       </div>
@@ -31,7 +31,7 @@ export default function ContactForm() {
             htmlFor="email"
             className="block text-xs font-semibold uppercase tracking-[0.2em] text-white/70"
           >
-            be the first to try selam{" "}
+            be the first to try kemey{" "}
           </label>
           <input
             id="email"
