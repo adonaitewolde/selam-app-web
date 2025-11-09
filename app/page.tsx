@@ -8,13 +8,6 @@ const ContactForm = dynamic(() => import("@/components/ContactForm"), {
   ),
 });
 
-// const navigation = [
-//   { name: "Product", href: "#" },
-//   { name: "Features", href: "#" },
-//   { name: "Marketplace", href: "#" },
-//   { name: "Company", href: "#" },
-// ];
-
 export default function Example() {
   // JSON-LD Structured Data
   const jsonLd = {
