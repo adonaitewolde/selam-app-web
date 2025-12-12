@@ -8,7 +8,7 @@ const ContactForm = dynamic(() => import("@/components/ContactForm"), {
   ),
 });
 
-export default function Example() {
+export default function HomePage() {
   // JSON-LD Structured Data
   const jsonLd = {
     "@context": "https://schema.org",
@@ -145,7 +145,7 @@ export default function Example() {
                     alt="Follow us on Instagram"
                     width={50}
                     height={35}
-                    className="invert hover:scale-113 transition duration-300 ease-in-out"
+                    className="invert hover:scale-110 transition duration-300 ease-in-out"
                   />
                 </Link>
               </div>
